@@ -4,7 +4,7 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "bcb",
+    "b b",
     "aba"
   ],
   "key": {
@@ -13,9 +13,6 @@
     },
     "b": {
       "item": "the_box:card_board_piece_with_print"
-    },
-    "c": {
-      "item": "the_box:tape"
     }
   },
   "result": {

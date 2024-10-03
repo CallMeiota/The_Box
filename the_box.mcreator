@@ -153,28 +153,14 @@
       "path": "~/Recipes"
     },
     {
-      "name": "Tape",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tape",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/the_box/models/item/tape.json",
-          "src/main/java/net/mriota/thebox/item/TapeItem.java"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
-      "name": "TapeRecipe",
+      "name": "BoxRecipe",
       "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tape_recipe",
+      "registry_name": "box_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/the_box/recipes/tape_recipe.json"
+          "src/main/resources/data/the_box/recipes/box_recipe.json"
         ]
       },
       "path": "~/Recipes"
@@ -209,8 +195,7 @@
       "subtitles.box_closing": "Box closing",
       "block.the_box.the_box": "The Box",
       "gui.the_box.the_box_gui.label_the_box": "The Box",
-      "item.the_box.card_board_piece_with_print": "Card Board Piece With Print",
-      "item.the_box.tape": "Tape"
+      "item.the_box.card_board_piece_with_print": "Card Board Piece With Print"
     }
   },
   "foldersRoot": {
