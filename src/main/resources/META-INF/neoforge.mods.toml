@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="the_box"
-version="1.3"
+version="1.3.1"
 displayName="The Box"
 displayURL="https://github.com/CallMeiota/The-Box"
 logoFile="logo.png"

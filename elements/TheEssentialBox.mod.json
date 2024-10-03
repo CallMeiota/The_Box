@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "The Essential Box",
+    "icon": {
+      "value": "CUSTOM:CardBoardPieceWithPrint"
+    },
+    "showSearch": false
+  }
+}

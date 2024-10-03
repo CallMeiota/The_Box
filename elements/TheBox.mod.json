@@ -42,7 +42,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "TOOLS"
+        "value": "CUSTOM:TheEssentialBox"
       }
     ],
     "destroyTool": "Not specified",

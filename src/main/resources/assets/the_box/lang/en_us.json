@@ -1,9 +1,10 @@
 {
-  "item.the_box.card_board_piece_without": "Card Board Piece Without",
+  "item.the_box.card_board_piece_without": "CardBoard",
   "gui.the_box.the_box_gui.label_inventory": "Inventory",
   "subtitles.box-opening": "Box opening",
   "subtitles.box_closing": "Box closing",
+  "item_group.the_box.the_essential_box": "The Essential Box",
   "block.the_box.the_box": "The Box",
   "gui.the_box.the_box_gui.label_the_box": "The Box",
-  "item.the_box.card_board_piece_with_print": "Card Board Piece With Print"
+  "item.the_box.card_board_piece_with_print": "CardBoard Printed"
 }
