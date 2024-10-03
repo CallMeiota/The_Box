@@ -1,0 +1,7 @@
+
+{
+  "parent": "the_box:displaysettings/mainbox.item",
+  "textures": {
+    "particle": "the_box:block/boxtexture"
+  }
+}

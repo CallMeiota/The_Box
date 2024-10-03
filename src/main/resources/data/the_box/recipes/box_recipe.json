@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "box_recipe",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "the_box:card_board_piece_without"
+    },
+    "b": {
+      "item": "the_box:card_board_piece_with_print"
+    },
+    "c": {
+      "item": "the_box:tape"
+    }
+  },
+  "result": {
+    "id": "the_box:the_box",
+    "count": 1
+  }
+}

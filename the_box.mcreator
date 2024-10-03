@@ -1,0 +1,264 @@
+{
+  "mod_elements": [
+    {
+      "name": "TheBox",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_box",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mriota/thebox/block/renderer/TheBoxDisplayItemRenderer.java",
+          "src/main/java/net/mriota/thebox/block/renderer/TheBoxTileRenderer.java",
+          "src/main/java/net/mriota/thebox/block/TheBoxBlock.java",
+          "src/main/java/net/mriota/thebox/block/model/TheBoxDisplayModel.java",
+          "src/main/resources/assets/the_box/blockstates/the_box.json",
+          "src/main/java/net/mriota/thebox/block/model/TheBoxBlockModel.java",
+          "src/main/java/net/mriota/thebox/block/entity/TheBoxTileEntity.java",
+          "src/main/java/net/mriota/thebox/block/display/TheBoxDisplayItem.java",
+          "src/main/resources/assets/the_box/models/item/the_box.json",
+          "src/main/resources/assets/the_box/models/custom/the_box_particle.json"
+        ]
+      },
+      "path": "~/Box"
+    },
+    {
+      "name": "TheBoxGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_box_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mriota/thebox/client/gui/TheBoxGuiScreen.java",
+          "src/main/java/net/mriota/thebox/world/inventory/TheBoxGuiMenu.java"
+        ]
+      },
+      "path": "~/Gui"
+    },
+    {
+      "name": "BoxOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "box_open",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mriota/thebox/procedures/BoxOpenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BoxClose",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "box_close",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mriota/thebox/procedures/BoxCloseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CardBoardPieceWithout",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_board_piece_without",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_box/models/item/card_board_piece_without.json",
+          "src/main/java/net/mriota/thebox/item/CardBoardPieceWithoutItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CardBoardPieceWithPrint",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_board_piece_with_print",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mriota/thebox/item/CardBoardPieceWithPrintItem.java",
+          "src/main/resources/assets/the_box/models/item/card_board_piece_with_print.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "CardBoardPieceWithoutPrint",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_board_piece_without_print",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_box/recipes/card_board_piece_without_print.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CardBoardPieceWithPrintSide",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "card_board_piece_with_print_side",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_box/recipes/card_board_piece_with_print_side.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Tape",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tape",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/the_box/models/item/tape.json",
+          "src/main/java/net/mriota/thebox/item/TapeItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TapeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tape_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/the_box/recipes/tape_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "box-opening",
+      "files": [
+        "openingsoundeffect"
+      ],
+      "category": "block",
+      "subtitle": "Box opening"
+    },
+    {
+      "name": "box_closing",
+      "files": [
+        "closingsoundeffect"
+      ],
+      "category": "block",
+      "subtitle": "Box closing"
+    }
+  ],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.the_box.card_board_piece_without": "Card Board Piece Without",
+      "gui.the_box.the_box_gui.label_inventory": "Inventory",
+      "subtitles.box-opening": "Box opening",
+      "subtitles.box_closing": "Box closing",
+      "block.the_box.the_box": "The Box",
+      "gui.the_box.the_box_gui.label_the_box": "The Box",
+      "item.the_box.card_board_piece_with_print": "Card Board Piece With Print",
+      "item.the_box.tape": "Tape"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Gui",
+        "children": []
+      },
+      {
+        "name": "Box",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "the_box",
+    "modName": "The Box",
+    "version": "1.3",
+    "description": "Adds a new and improved item to the game.",
+    "author": "CallMeiota",
+    "websiteURL": "https://github.com/CallMeiota/The-Box",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "box_chest",
+    "requiredMods": [
+      "geckolib"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "neoforge-1.20.6",
+    "credits": "Go to CallMeiota for making a weird but functional box.",
+    "modElementsPackage": "net.mriota.thebox"
+  },
+  "mcreatorVersion": 202400232117
+}

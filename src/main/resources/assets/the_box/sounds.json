@@ -1,0 +1,20 @@
+{
+  "box-opening": {
+    "subtitle": "subtitles.box-opening",
+    "sounds": [
+      {
+        "name": "the_box:openingsoundeffect",
+        "stream": false
+      }
+    ]
+  },
+  "box_closing": {
+    "subtitle": "subtitles.box_closing",
+    "sounds": [
+      {
+        "name": "the_box:closingsoundeffect",
+        "stream": false
+      }
+    ]
+  }
+}

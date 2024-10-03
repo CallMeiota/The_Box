@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "the_box:custom/the_box_particle"
+    },
+    "facing=east": {
+      "model": "the_box:custom/the_box_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "the_box:custom/the_box_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "the_box:custom/the_box_particle",
+      "y": 270
+    }
+  }
+}

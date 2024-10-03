@@ -1,0 +1,48 @@
+{
+  "_fv": 66,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "box_recipe",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CardBoardPieceWithout"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithPrint"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithout"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithPrint"
+      },
+      {
+        "value": "CUSTOM:Tape"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithPrint"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithout"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithPrint"
+      },
+      {
+        "value": "CUSTOM:CardBoardPieceWithout"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TheBox"
+    },
+    "name": "box_recipe",
+    "namespace": "mod"
+  }
+}
