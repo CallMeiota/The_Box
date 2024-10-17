@@ -15,6 +15,6 @@ import net.minecraft.core.registries.Registries;
 
 public class TheBoxModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(Registries.SOUND_EVENT, TheBoxMod.MODID);
-	public static final DeferredHolder<SoundEvent, SoundEvent> BOX_OPENING = REGISTRY.register("box-opening", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_box", "box-opening")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> BOX_CLOSING = REGISTRY.register("box_closing", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("the_box", "box_closing")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BOX_OPENING = REGISTRY.register("box-opening", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("the_box", "box-opening")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BOX_CLOSING = REGISTRY.register("box_closing", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("the_box", "box_closing")));
 }

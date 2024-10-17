@@ -31,7 +31,7 @@ public class TheBoxGuiScreen extends AbstractContainerScreen<TheBoxGuiMenu> {
 		this.imageHeight = 210;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("the_box:textures/screens/the_box_gui.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("the_box:textures/screens/the_box_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -47,7 +47,7 @@ public class TheBoxGuiScreen extends AbstractContainerScreen<TheBoxGuiMenu> {
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("the_box:textures/screens/name.png"), this.leftPos + 0, this.topPos + -20, 0, 0, 53, 21, 53, 21);
+		guiGraphics.blit(ResourceLocation.parse("the_box:textures/screens/name.png"), this.leftPos + 0, this.topPos + -20, 0, 0, 53, 21, 53, 21);
 
 		RenderSystem.disableBlend();
 	}

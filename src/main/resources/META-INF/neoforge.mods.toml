@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[2,)"
+loaderVersion="[4,)"
 license="All Rights Reserved"
 
 [[mods]]
 modId="the_box"
-version="1.3.1"
+version="2.3.1"
 displayName="The Box"
 displayURL="https://github.com/CallMeiota/The-Box"
 logoFile="logo.png"
@@ -16,32 +16,32 @@ description="Adds a new and improved item to the game."
 # End of user code block mod configuration
 
 [[dependencies.the_box]]
-    modId="neoforge"
-    type="required"
-    versionRange="[20.6.117,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.the_box]]
-    modId="minecraft"
-    type="required"
-    versionRange="[1.20.6]"
-    ordering="AFTER"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.the_box]]
-    modId="geckolib"
-    type="required"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="geckolib"
+type="required"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 
 [[dependencies.the_box]]
-    modId="geckolib"
-    type="optional"
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
+modId="geckolib"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
 
 
 # Start of user code block dependencies configuration

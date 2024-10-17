@@ -9,16 +9,16 @@ import net.minecraft.resources.ResourceLocation;
 public class TheBoxBlockModel extends GeoModel<TheBoxTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(TheBoxTileEntity animatable) {
-		return new ResourceLocation("the_box", "animations/mainbox.animation.json");
+		return ResourceLocation.parse("the_box:animations/mainbox.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(TheBoxTileEntity animatable) {
-		return new ResourceLocation("the_box", "geo/mainbox.geo.json");
+		return ResourceLocation.parse("the_box:geo/mainbox.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(TheBoxTileEntity animatable) {
-		return new ResourceLocation("the_box", "textures/block/boxtexture.png");
+		return ResourceLocation.parse("the_box:textures/block/boxtexture.png");
 	}
 }

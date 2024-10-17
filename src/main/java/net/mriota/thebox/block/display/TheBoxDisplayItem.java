@@ -6,9 +6,8 @@ import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.animation.AnimationController;
 import software.bernie.geckolib.animation.AnimatableManager;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.GeoItem;
-
-import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 
 import net.mriota.thebox.block.renderer.TheBoxDisplayItemRenderer;
 
@@ -31,14 +30,15 @@ public class TheBoxDisplayItem extends BlockItem implements GeoItem {
 	}
 
 	@Override
-	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		super.initializeClient(consumer);
-		consumer.accept(new IClientItemExtensions() {
-			private final BlockEntityWithoutLevelRenderer renderer = new TheBoxDisplayItemRenderer();
+	public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+		consumer.accept(new GeoRenderProvider() {
+			private TheBoxDisplayItemRenderer renderer;
 
 			@Override
-			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-				return renderer;
+			public BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
+				if (this.renderer == null)
+					this.renderer = new TheBoxDisplayItemRenderer();
+				return this.renderer;
 			}
 		});
 	}
